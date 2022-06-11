@@ -13,6 +13,7 @@ redSelect = cv.add(lowRedFilter, highRedFilter)
 
 result = cv.bitwise_and(base, base, mask=redSelect)
 
+cv.imwrite('./imagem/result.jpg', result)
 cv.imshow('result', result)
 cv.waitKey(0)
 cv.destroyAllWindows()
