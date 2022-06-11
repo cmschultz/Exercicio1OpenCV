@@ -5,7 +5,6 @@ base = cv.imread('./imagem/base.png')
 
 median = cv.medianBlur(base, 9)
 
-
 hsv_median = cv.cvtColor(median, cv.COLOR_BGR2HSV)
 lowRedFilter = cv.inRange(hsv_median, (0, 0, 10), (15, 255, 200))
 highRedFilter = cv.inRange(hsv_median, (160, 190, 50), (179, 255, 255))
